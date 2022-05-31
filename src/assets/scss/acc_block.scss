@@ -1,0 +1,358 @@
+$main_font_color: #3D3D3D;
+$second_font_color: #777777;
+$notfocus_font_color: #7e7e7e;
+
+.account_page{
+    .container{
+        .banner{
+            width: 100%;
+            background-color: #F0E1BC;
+            border-radius: 10px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 53px;
+            line-height: 65px;
+            .more_info{
+                padding: 15px;
+                color: white;
+                background-color: #3d3d3d;
+                border: none;
+                border-radius: 5px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                cursor: pointer;
+            }
+        }
+        .account_block{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            display: flex;
+            .side_menu{
+                width: 290px;
+                display: flex;
+                flex-direction: column;
+                #btn_acc9{
+                    color: #E74C3C;
+                    padding: 0;
+                    border: none;
+                    background-color: inherit;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: start;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        fill: #E74C3C;
+                    }
+                    margin-top: 10px;
+                }
+                a{
+                    padding: 0;
+                    border: none;
+                    background-color: inherit;
+                    color: $notfocus_font_color;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: start;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    text-decoration: none;
+                    &.router-link-exact-active{
+                        color: #EB9044;
+                        svg{
+                            fill: #EB9044;
+                        }
+                    }
+                    svg{
+                        fill: $notfocus_font_color;
+                    }
+
+                }
+            }
+            .block_content{
+                order: 0;
+                align-self: stretch;
+                flex-grow: 1;
+                height: 633px;
+                .title{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+                #backtoprod{
+                    text-decoration: none;
+                    background-color: #E89D5F;
+                    border: none;
+                    border-radius: 5px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 15px 48px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            .block_content{
+                text-align: start;
+            }
+            .block_content .account_content{
+
+                .acc_info_block{
+                    margin-top: 35px;
+                    table{
+                        padding-bottom: 35px;
+                        border-collapse: separate;
+                        border-spacing: 20px 20px;
+                    }
+                    tr td:nth-child(1){
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $notfocus_font_color;
+                    }
+                    tr td:nth-child(2){
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $main_font_color
+                    }
+                    #btn_change_photo{
+                        padding: 0;
+                        border: none;
+                        background: inherit;
+                        cursor: pointer;
+                    }
+                    #submit_change_profile{
+                        padding: 15px 31px;
+                        color: white;
+                        background-color: #E89D5F;
+                        border: none;
+                        border-radius: 5px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .block_content .cards_content{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                
+                .cardlist{
+                    margin-top: 35px;
+                    .card{
+                        margin-bottom: 20px;
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                        }
+                        .number_card{
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: $main_font_color;
+                        }
+                        .status_card{
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #E89D5F;
+                        }
+                        .card_buttons{
+                            button{
+                                cursor: pointer;
+                                background-color: #F0F6FA;
+                                border: none;
+                                border-radius: 5px;
+                                padding: 15px 20px;
+                                margin-left: 20px;
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: $main_font_color;
+                            }
+                        }
+                    }
+                }
+                .no_card_text{
+                    flex: 1 0 auto;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 70px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                    }
+                    & span:nth-child(1){
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 44px;
+                        margin-bottom: 20px;
+                    }
+                    & span:nth-child(2){
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: $second_font_color;
+                        width: 65%;
+                        text-align: center;
+                        margin-bottom: 70px;
+                    }
+                    
+                }
+            }
+            .block_content .notification_content{
+                .no_notification_text{
+                    margin-top: 50px;
+                    text-align: center;
+
+                    span{
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 44px;
+                    }
+                }
+            }
+            .block_content .favorite_content{
+                height: 100%;
+                .not_favorites_text{
+                    height: 60%;
+                    justify-content: space-around;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 44px;
+                        text-align: center;
+                        width: 750px;
+
+                    }
+                }
+            }
+            .block_content .orders_content{
+                height: 70%;
+                .no_order_text{
+                    display: flex;
+                    flex: 0 1 auto;
+                    height: 100%;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span{
+                        margin-bottom: 70px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 44px;
+                        width: 67%;
+                        text-align: center;
+                    }
+                }
+                .orderlist{
+                    margin-top: 50px;
+                    .order_block{
+                        hr{
+                            border-top: 1px solid #F4F4F4;
+                            margin: 14px 0 14px 0;
+                        }
+                    }
+                    .order{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: space-between;
+                        .orderinfo{
+                            display: flex;
+                            width: 60%;
+                            justify-content: space-between;
+                            color: #777777;
+                            .orderid, .order_status{
+                                color: #333333;
+                            }
+                            .orderid{
+                                font-weight: 600;
+                            }
+                        }
+                        .order_moreinfo{
+                            border: none;
+                            background-color: inherit;
+                            color: #EB9044;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .block_content .reviews_content{
+                height: 100%;
+                .no_review_text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1 0 auto;
+                    height: 70%;
+                    span{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 44px;
+                        text-align: center;
+                        margin-bottom: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

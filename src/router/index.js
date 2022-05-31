@@ -1,19 +1,73 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import IndexView from "@/views/IndexView.vue";
+import AccountView from "@/views/AccoutView.vue";
+import catalogView from "@/views/CatalogView";
+
+
+import AccView from "@/views/AccountViews/AccView";
+import OrdersView from "@/views/AccountViews/OrdersView";
+import cardsView from "@/views/AccountViews/CardsView";
+import favoritesView from "@/views/AccountViews/FavoritesView";
+import locationView from "@/views/AccountViews/LocationView";
+import notificationView from "@/views/AccountViews/NotificationView";
+import providerView from "@/views/AccountViews/ProviderView";
+import reviewsView from "@/views/AccountViews/ReviewsView";
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: IndexView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: "/catalog",
+    name: "catalog",
+    component: catalogView,
+  },
+  {
+    path: "/acc",
+    name: "account",
+    component: AccountView,
+    children: [{
+      path: "",
+      name: "accountView",
+      component: AccView
+    },
+      {
+      path:"orders",
+      name: "ordersView",
+      component: OrdersView
+    },
+      {
+        path: "cards",
+        name: "cardsView",
+        component: cardsView
+      },
+      {
+        path: "favorites",
+        name: "favoritesView",
+        component: favoritesView
+      },
+      {
+        path: "location",
+        name: "locationView",
+        component: locationView
+      },
+      {
+        path: "notifications",
+        name: "notificationView",
+        component: notificationView
+      },
+      {
+        path: "beprovider",
+        name: "providerView",
+        component: providerView
+      },
+      {
+        path: "reviews",
+        name: "reviewsView",
+        component: reviewsView
+      }]
   }
 ]
 

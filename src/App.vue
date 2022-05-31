@@ -1,19 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <product-view/>
+  <header-view/>
+  <div class="content">
+    <router-view/>
+  </div>
+  <footer-view/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+
 
 nav {
   padding: 30px;
@@ -28,3 +23,11 @@ nav {
   }
 }
 </style>
+<script>
+import HeaderView from "@/components/HeaderView";
+import footerView from "@/components/FooterView";
+import productView from "@/components/ProductView";
+export default {
+  components: { HeaderView, footerView, productView }
+}
+</script>

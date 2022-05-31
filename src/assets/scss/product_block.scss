@@ -1,0 +1,267 @@
+$font_color: #3D3D3D;
+$secodfont_color: #7E7E7E;
+$background_color: #F4F4F4;
+$primary_color: #E89D5F;
+.background{
+    transition: opacity .2s ease-in-out, visibility .2s ease;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+.product_block{
+    
+    top: -1000px;
+    transition: transform .2s linear;
+    overflow-y: auto;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .product_block_wrap{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        width: 1060px;
+        height: 775px;
+        .product_block_top{
+            position: relative;
+            .btn_close{
+                position: absolute;
+                right: 28px;
+                top: 28px;
+                background-color: inherit;
+                border: none;
+                cursor: pointer;
+            }
+            .container{
+                display: flex;
+                width: 1000px;
+                margin: 35px;
+            }
+            .image_block{
+                border-radius: 10px;
+                width: 475px;
+                height: 385px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+            .info_block{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                margin-left: 40px;
+                width: 30%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                .product_title{
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+                .supplier{
+                    text-decoration: none;
+                    color: $secodfont_color;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                span{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $font_color;
+                }
+                .rating_block{
+                    margin-bottom: 10px;
+                }
+                .product_manage{
+                    display: flex;
+                    span{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                    }
+                    .price{
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                    .amount_block{
+                        margin: 0 10px 0 22px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 120px;
+                        height: 35px;
+                        background-color: #F0F6FA;
+                        border-radius: 5px;
+                        button{
+                            cursor: pointer;
+                            padding: 0;
+                            border: none;
+                            background-color: inherit;
+                        }
+                        .amount_count{
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                    .btn_favorite{
+                        padding: 0;
+                        border: none;
+                        background-color: inherit;
+                        cursor: pointer;
+                    }
+                }
+                .buttons_block{
+                    display: flex;
+                    .buttons{
+                        background-color: #F4F4F4;
+                        border-radius: 10px;
+                        button{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            background-color: inherit;
+                            border: none;
+                            border-radius: 10px;
+                            padding: 10px 20px;
+                            cursor: pointer;
+                            transition: all .2s;
+                            color: $secodfont_color;
+                        }
+                        .selected{
+                            color: white;
+                            background-color: #E89D5F;
+                        }
+                    }
+                }
+            }
+        }
+        .product_block_bottom{
+            border-radius: 10px;
+            overflow: hidden;
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            .nav_bottom_block{
+                margin: 0 35px 20px 35px;
+                .container {
+                    button{
+                        background-color: inherit;border: none;font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        cursor: pointer;
+                        line-height: 17px;
+                        color: #777777;
+                    }
+                    .selected{
+                        color: #E89D5F;
+
+                    }
+                }
+                
+            }
+            .bottom_block_content{
+                flex: 1 0 auto;
+                background-color: #F0F6FA;
+                .container{
+                    margin: 35px;
+                    .description{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        text-align: justify;
+                    }
+                    .information{
+                        .information_content{
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
+                        .info_block{
+                            display: inline-grid;
+                            span{
+                                margin-bottom: 10px;
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 26px;
+                                color: $font_color;
+                            }
+                        }
+                        .per_suplier_block{
+                            display: flex;
+                            align-items: center;
+                            .suplier_block{
+                                display: flex;
+                                .suplier_image{
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    img{
+                                        height: 100%;
+                                    }
+                                }
+                                .suplier_info{
+                                    margin-left: 10px;
+                                    .title{
+                                        margin-bottom: 10px;
+                                        .suplier_name{
+                                            font-family: 'Montserrat';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 24px;
+                                            line-height: 29px;
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+                                    
+                                    .rating{
+                                        margin-bottom: 15px;
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        color: $secodfont_color;
+                                        .star{
+                                            color: #F7CA18;
+                                        }
+                                    }
+                                    .btn_more_info{
+                                        margin: 0;
+                                        padding: 0;
+                                        border: none;
+                                        background-color: inherit;
+                                        color: #EB9044;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
