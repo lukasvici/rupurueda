@@ -25,7 +25,9 @@ export default {
   name: "CardsView",
   data(){
     return{
-      credit_cards: [{"number":"1234 1234 1234 1234", "status":"Основная"},{"number":"1234 1234 1234 1234", "status":"Запасная"}],
+      credit_cards: [
+          //{"number":"1234 1234 1234 1234", "status":"Основная"},{"number":"1234 1234 1234 1234", "status":"Запасная"}
+      ],
 
     }
   }

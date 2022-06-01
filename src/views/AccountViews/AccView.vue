@@ -4,7 +4,7 @@
     <div class="acc_info_block">
       <table>
         <tr>
-          <td>Фамилия и имя</td>
+          <td>Фамилия и имя </td>
           <td>Никита андреевич</td>
         </tr>
         <tr>
@@ -23,8 +23,12 @@
           <td>Изображение профиля</td>
           <td><button id="btn_change_photo"><img src="@/assets/source/suplier_images/tempimage.png" alt="acc_photo"></button></td>
         </tr>
+        <tr>
+          <td></td>
+          <td><button id="submit_change_profile">Изменить</button></td>
+        </tr>
       </table>
-      <button id="submit_change_profile">Изменить</button>
+
     </div>
   </div>
 </template>

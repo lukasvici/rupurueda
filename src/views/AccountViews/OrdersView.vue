@@ -30,7 +30,9 @@ export default {
   name: "OrdersView",
   data(){
     return{
-      orders: [{"id":123123, "status":"Отменен", "price":10789, "date":"30.04.22", "amount": 1},{"id":123123, "status":"Отменен", "price":10789, "date":"30.04.22", "amount": 1}],
+      orders: [
+          //{"id":123123, "status":"Отменен", "price":10789, "date":"30.04.22", "amount": 1},{"id":123123, "status":"Отменен", "price":10789, "date":"30.04.22", "amount": 1}
+      ],
 
     }
   }

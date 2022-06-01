@@ -23,6 +23,16 @@ const routes = [
     path: "/catalog",
     name: "catalog",
     component: catalogView,
+    children: [{
+      path: ":cat",
+      name: "categorytittle",
+      component: catalogView,
+      children:[{
+        path:":subcat",
+        name: "subcattittle",
+        component: catalogView
+      }]
+    }]
   },
   {
     path: "/acc",

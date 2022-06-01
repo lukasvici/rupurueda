@@ -50,17 +50,7 @@
         </div>
         <div class="block_content">
           <router-view></router-view>
-
-
-
-
-
-
-
-
-
         </div>
-
       </div>
     </div>
   </div>

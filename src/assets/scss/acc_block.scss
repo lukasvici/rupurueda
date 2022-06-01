@@ -1,10 +1,15 @@
 $main_font_color: #3D3D3D;
 $second_font_color: #777777;
 $notfocus_font_color: #7e7e7e;
-
+.clearstylesbtn{
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
 .account_page{
     .container{
         .banner{
+            margin-top: 50px;
             width: 100%;
             background-color: #F0E1BC;
             border-radius: 10px;
@@ -36,7 +41,7 @@ $notfocus_font_color: #7e7e7e;
             margin-bottom: 100px;
             display: flex;
             .side_menu{
-                width: 290px;
+                width: 250px;
                 display: flex;
                 flex-direction: column;
                 #btn_acc9{
@@ -163,9 +168,6 @@ $notfocus_font_color: #7e7e7e;
                 }
             }
             .block_content .cards_content{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
                 
                 .cardlist{
                     margin-top: 35px;
@@ -208,9 +210,7 @@ $notfocus_font_color: #7e7e7e;
                     }
                 }
                 .no_card_text{
-                    flex: 1 0 auto;
-                    align-items: center;
-                    justify-content: center;
+
                     margin-top: 70px;
                     display: flex;
                     flex-direction: column;
@@ -272,14 +272,24 @@ $notfocus_font_color: #7e7e7e;
                     }
                 }
             }
+            .block_content .location_content{
+                .title{
+
+                }
+                .locationlist{
+                    .location{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
             .block_content .orders_content{
-                height: 70%;
                 .no_order_text{
+                    margin-top: 81px;
                     display: flex;
                     flex: 0 1 auto;
                     height: 100%;
-                    justify-content: center;
-                    display: flex;
                     flex-direction: column;
                     align-items: center;
                     span{
@@ -334,13 +344,11 @@ $notfocus_font_color: #7e7e7e;
                 }
             }
             .block_content .reviews_content{
-                height: 100%;
                 .no_review_text{
+                    margin-top: 81px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
-                    flex: 1 0 auto;
                     height: 70%;
                     span{
                         font-family: 'Montserrat';
