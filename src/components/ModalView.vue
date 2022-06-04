@@ -85,6 +85,16 @@
       </div>
     </div>
   </div>
+  <div class="account_block_name">
+    <div class="account_block_name_wrap">
+      <div class="title">Фамилия и имя</div>
+      <input type="text" placeholder="Введите имя и фамилия">
+      <div class="buttons">
+        <button>Подтверидть </button>
+        <button @click="close_edit_name()">Отмена</button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -96,6 +106,16 @@ export default {
     }
   },
   methods:{
+    close_edit_name(){
+      var backgroundblock = document.getElementsByClassName("background")[0]
+      var acc_block = document.getElementsByClassName("account_block_name")[0]
+      console.log(backgroundblock.style)
+
+      backgroundblock.style.opacity = 0
+      acc_block.style.transform = "translate(0px, -1000px)"
+      console.log(acc_block.style.transform)
+      backgroundblock.style.visibility = "hidden"
+    },
     change_button(event){
       console.log(event.path[1].children[0].classList)
       event.path[1].children[0].classList.remove("selected")

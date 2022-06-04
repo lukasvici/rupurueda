@@ -5,7 +5,7 @@
       <table>
         <tr>
           <td>Фамилия и имя </td>
-          <td>Никита андреевич</td>
+          <td>Никита андреевич <button @click="open_edit_name()">test</button></td>
         </tr>
         <tr>
           <td>Сумма заказов</td>
@@ -35,7 +35,17 @@
 
 <script>
 export default {
-  name: "AccView"
+  name: "AccView",
+  methods:{
+      open_edit_name(){
+        var backgroundblock = document.getElementsByClassName("background")[0]
+        var acc_block = document.getElementsByClassName("account_block_name")[0]
+        console.log(backgroundblock.style)
+        backgroundblock.style.visibility = "visible"
+        backgroundblock.style.opacity = 1
+        acc_block.style.transform = "translate(0px, 1000px)"
+    }
+  }
 }
 </script>
 

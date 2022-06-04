@@ -277,10 +277,96 @@ $notfocus_font_color: #7e7e7e;
 
                 }
                 .locationlist{
+                    margin-top: 35px;
                     .location{
+                        margin-bottom: 20px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        .info{
+                            .main_info{
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: $main_font_color;
+                            }
+                            .add_info{
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: $second_font_color;
+                            }
+                        }
+                        .status span{
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #E89D5F;
+                        }
+                        .buttons{
+                            a, button{
+                                text-decoration: none;
+                                color: $main_font_color;
+                                background-color: #F0F6FA;
+                                border: none;
+                                padding: 15px 21px;
+                                border-radius: 5px;
+                                font-family: 'Montserrat';
+                                margin-left: 41px;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+                .btnadd_block{
+                    margin-top: 50px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                    #addloc{
+                        border: none;
+                        padding: 15px 21px;
+                        border-radius: 5px;
+                        background-color: #E89D5F;
+                        cursor: pointer;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: white;
+                    }
+                }
+
+            }
+            .block_content .locationedit_content{
+                .up_row, .middle_row, .bottom_row{
+                    display: flex;
+                }
+                .up_row{
+                    input{
+                        flex: 1 0;
+                        margin-right: 40px;
+                        &:nth-child(3){
+                            margin-right: 0;
+                        }
+                    }
+                }
+                .middle_row{
+                    input[type=text]{
+                        flex: 1 0;
+                        margin-right: 35px;
+                        &:nth-child(4){
+                            margin-right: 40px;
+                        }
+                    }
+                }
+                .bottom_row{
+                    #locdescription{
+                        flex: 1 0;
                     }
                 }
             }

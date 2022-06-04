@@ -1,5 +1,5 @@
 <template>
-  <product-view/>
+  <modal-view/>
   <header-view/>
   <div class="content">
     <router-view/>
@@ -26,8 +26,8 @@ nav {
 <script>
 import HeaderView from "@/components/HeaderView";
 import footerView from "@/components/FooterView";
-import productView from "@/components/ProductView";
+import modalView from "@/components/ModalView";
 export default {
-  components: { HeaderView, footerView, productView }
+  components: { HeaderView, footerView, modalView }
 }
 </script>

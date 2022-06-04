@@ -5,7 +5,7 @@ import '@/assets/scss/header.scss'
 import "@/assets/scss/content.scss"
 import "@/assets/scss/footer.scss"
 import "@/assets/scss/acc_block.scss"
-import "@/assets/scss/product_block.scss"
+import "@/assets/scss/modal.scss"
 import "@/assets/scss/catalog.scss"
 
 createApp(App).use(router).mount('#app')

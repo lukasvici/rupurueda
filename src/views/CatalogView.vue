@@ -44,8 +44,6 @@ export default {
     //это все имитация получения данных из бд
     //с backend`ом этого не будет
     getcontent(cat, subcat){
-      console.log(cat)
-      console.log(subcat)
       if (cat != null && subcat == null){
         let arr = new Array()
         arr = []

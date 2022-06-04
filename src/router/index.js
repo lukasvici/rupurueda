@@ -3,6 +3,7 @@ import IndexView from "@/views/IndexView.vue";
 import AccountView from "@/views/AccoutView.vue";
 import catalogView from "@/views/CatalogView";
 
+import LocationeditView from "@/views/AccountViews/LocationeditView"
 
 import AccView from "@/views/AccountViews/AccView";
 import OrdersView from "@/views/AccountViews/OrdersView";
@@ -62,6 +63,11 @@ const routes = [
         path: "location",
         name: "locationView",
         component: locationView
+      },
+      {
+        path: "/location/:id",
+        name: "editlocation",
+        component: LocationeditView
       },
       {
         path: "notifications",
