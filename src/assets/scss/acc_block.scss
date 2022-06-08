@@ -124,6 +124,7 @@ $notfocus_font_color: #7e7e7e;
             .block_content .account_content{
 
                 .acc_info_block{
+
                     margin-top: 35px;
                     table{
                         padding-bottom: 35px;
@@ -144,7 +145,15 @@ $notfocus_font_color: #7e7e7e;
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 20px;
-                        color: $main_font_color
+                        color: $main_font_color;
+                        display: flex;
+                        align-items: end;
+                    }
+                    .btn_edit{
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 20px;
+                        cursor: pointer;
                     }
                     #btn_change_photo{
                         padding: 0;
